@@ -1,0 +1,12 @@
+[package]
+name = "employeeDb"
+version = "0.1.0"
+edition = "2024"
+
+[lib]
+name="employee_db"
+path="src/lib.rs"
+
+[dependencies]
+nix = { version = "0.29", default-features = false, features = ["fs", "stat", "unistd"] }
+clap = { version = "4", features = ["derive"] }
